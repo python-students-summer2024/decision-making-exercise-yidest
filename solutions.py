@@ -127,16 +127,16 @@ def is_leap_year():
         get_year()
     )  # this line is given to you - the variable, year, holds the current year
     #### write your solution for this function below here. ####
-    weather_leap=int(year)%4
-    weather_century=int(year)%100
-    weather_400=int(year)%400
-    if weather_century!=0:
-        if weather_leap==0:
+    whether_leap=int(year)%4
+    whether_century=int(year)%100
+    whether_400=int(year)%400
+    if whether_century!=0:
+        if whether_leap==0:
             return True
         else:
             return False
     else:
-        if weather_400==0:
+        if whether_400==0:
             return True
         else:
             return False
